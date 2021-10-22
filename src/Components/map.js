@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 
 const Map = ({ detail }) => {
@@ -6,8 +5,6 @@ const Map = ({ detail }) => {
         height: "40vh",
         width: "60%",
         margin: "auto",
-
-        margin: " auto",
     };
 
     const defaultCenter = {
@@ -17,7 +14,7 @@ const Map = ({ detail }) => {
 
     return (
         <>
-            <LoadScript googleMapsApiKey={process.env.REACT_APP_MAP_API_KEY}>
+            <LoadScript googleMapsApiKey="AIzaSyA6fIijTgfBBFxwbR4_qW_dIgXVkVcaClM">
                 <GoogleMap
                     mapContainerStyle={mapStyles}
                     zoom={4}
